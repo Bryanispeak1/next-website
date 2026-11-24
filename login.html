@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT - Log In</title>
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-header">
+            <div class="logo">♦ NEXT</div>
+            <h2>Welcome Back</h2>
+            <p>Log in to access your dashboard</p>
+        </div>
+
+        <div class="social-container">
+            <button class="social-btn">
+                <svg viewBox="0 0 24 24"><path fill="#EA4335" d="M12 5.04c1.64 0 3.12.56 4.28 1.67l3.2-3.2C17.52 1.58 14.96 1 12 1 7.35 1 3.4 3.65 1.5 7.5l3.85 2.99c.9-2.7 3.4-4.45 6.65-4.45z"/><path fill="#4285F4" d="M23.49 12.27c0-.81-.07-1.59-.2-2.34H12v4.43h6.44c-.28 1.47-1.11 2.71-2.36 3.55l3.66 2.84c2.14-1.97 3.39-4.88 3.39-8.48z"/><path fill="#FBBC05" d="M5.35 14.51c-.23-.69-.36-1.42-.36-2.18s.13-1.49.36-2.18L1.5 7.16C.54 9.07 0 11.21 0 12.5s.54 3.43 1.5 5.34l3.85-3.33z"/><path fill="#34A853" d="M12 23c3.24 0 5.97-1.07 7.96-2.92l-3.66-2.84c-1.1.74-2.51 1.18-4.3 1.18-3.25 0-5.75-1.75-6.65-4.45L1.5 16.96C3.4 20.81 7.35 23 12 23z"/></svg>
+                Log in with Google
+            </button>
+        </div>
+
+        <div class="divider">or use email</div>
+
+        <form id="loginForm" novalidate>
+            <div class="form-group" id="emailGroup">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com">
+                <div class="error-msg">Please enter a valid email address</div>
+            </div>
+
+            <div class="form-group" id="passwordGroup">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <div class="error-msg">Password field cannot be empty</div>
+            </div>
+
+            <div class="form-options">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+
+        <p class="footer-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+    <script src="pages.js"></script>
+</body>
+</html>
